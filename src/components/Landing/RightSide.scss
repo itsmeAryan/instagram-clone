@@ -1,0 +1,207 @@
+@import "../../GlobalScss.scss";
+
+:any-link {
+    text-decoration: none;
+}
+.RightSide {
+    margin-top: 8rem;
+    width: 400px;
+    display: flex;
+    position: sticky;
+    top: 1;
+    .Right_Side-Controller {
+        width: 100%;
+        display: flex;
+        position: relative;
+        .row {
+            width: 100%;
+            display: flex;
+            background-color: rgb(248, 248, 248);
+            padding-bottom: 2rem;
+            flex-direction: column;
+            .User-self {
+                width: 100%;
+                padding: 1rem 0.6rem;
+                .half {
+                    width: 70%;
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    .left {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        .user-img {
+                            width: 70px;
+                            
+                            height: 70px;
+                            border-radius: 50%;
+                            display: flex;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                
+                                object-fit: cover;
+                            }
+                        }
+                        .user-info {
+                            width: 60%;
+                            display: flex;
+                            flex-direction: column;
+                            align-self: stretch;
+                            position: relative;
+                            padding-left: 1rem;
+                            .bs {
+                                margin-top: 0.7rem;
+                                font-family: $Roboto400-900;
+                                font-size: 1.74rem;
+                                font-weight: 450;
+                            }
+                            .simple {
+                                color: $text-color;
+                                position: absolute;
+                                top: 40%;
+                            }
+                        }
+                    }
+                    .switch {
+                        display: flex;
+                        align-self: stretch;
+                        justify-content: center;
+                        align-items: center;
+                        a {
+                            text-decoration: none;
+                            font-family: $Roboto400-900;
+                        }
+                    }
+                }
+            }
+            .suggested {
+                display: flex;
+                width: 100%;
+                position: relative;
+                .half {
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    .suggest {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .texts {
+                            width: 80%;
+                            font-size: 1.7rem;
+                            font-family: $Roboto400-900;
+                            text-transform: capitalize;
+                            font-weight: 400;
+                            color: $text-color;
+                        }
+                        .textsa {
+                            width: 20%;
+                            justify-content: flex-end;
+                            display: flex;
+                            a {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    .people {
+                        width: 100%;
+                        display: flex;
+                        margin: 0.7rem 0;
+                        position: relative;
+                        justify-content: space-between;
+                        .left {
+                            width: 80%;
+                            display: flex;
+                            align-items: center;
+                            .people-img {
+                                width: 35px;
+                                height: 35px;
+                                position: relative;
+                                overflow: hidden;
+                                border-radius: 50%;
+                                display: flex;
+                                img{
+                                    width: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .peole-info {
+                                padding-left: 0.6rem;
+                                display: flex;
+                                width: 70%;
+                                // padding: 0.5rem;
+                                flex-direction: column;
+                                font-family: $Roboto400-900;
+                                position: relative;
+                                align-self: stretch;
+                                .one {
+                                    align-items: stretch;
+                                    align-self: stretch;
+                                    width: 100%;
+                                    margin-bottom: 1.5rem;
+                                    font-size: 1.58rem;
+                                }
+                                .one2 {
+                                    position: absolute;
+                                    top: 55%;
+                                    font-family: $Roboto400-900;
+                                    font-size: 1.4rem;
+                                    color: $text-color;
+                                }
+                            }
+                        }
+                        .follow {
+                            width: 20%;
+                            display: flex;
+                            justify-content: flex-end;
+                            a {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .timer {
+                width: 100%;
+                display: flex;
+                position: relative;
+                .linksh {
+                    width: 70%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    li {
+                        margin: 0.5rem;
+                        a {
+                            text-decoration: none;
+                            font-size: 1.4rem;
+                            color: $text-color;
+                            font-family: $Roboto400-900;
+                        }
+                    }
+                }
+            }
+            .footer {
+                width: 100%;
+                display: flex;
+                font-family: $Roboto400-900;
+                color: $text-color;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .RightSide{
+        display: none;
+    }
+}// CODE CREATED BY ARYAN
+//       github  https://github.com/itsmeAryan
+//       website https://my-social-apps.herokuapp.com/
+//       youtube https://www.youtube.com/channel/UCBKbLITqJc7C-vx-xwUILmg
+//       email   spidy12k@gmail.com
+//       FOLLOW ME GUYS......
+// ITS ME ARYAN

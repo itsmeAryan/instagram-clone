@@ -1,0 +1,208 @@
+@import '../../GlobalScss.scss';
+.ErrorPage{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .Error-controller{
+                height: 100%;
+                display: flex;
+        width: 100%;
+        .Error-row{
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+                height: 100%;
+                width: 100%;
+            align-items: center;
+            .Error-img{
+                    width: 100%;
+                height: 100%;
+                    justify-content: center;
+                display: flex;
+                img{
+                    width: 250px;
+                }
+            }
+            .Error-text{
+                width: 100%;
+                height: 100%;
+                    justify-content: center;
+                display: flex;
+                flex-direction: column;
+                .Error-title{
+                display: flex;
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                .text{
+                    width: 39%;
+                    text-align: center;
+                    font-size: 4rem;
+                    font-weight: 600;
+                    font-family: $Roboto400-900;
+                                }
+                }
+                .Error-body{
+                    margin: 1rem 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    p{
+                        width: 60%;
+                        text-align: center;
+                        font-family: $Roboto400-900;
+                        color: $text-color;
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+            .Back-to-home{
+                margin-top: 0.31rem;
+                width: 100%;
+                height: 100%;
+                    justify-content: center;
+                display: flex;
+                .text{
+                    width: 150px;
+                    display: flex;
+              
+                    a{
+                        width: 100%;
+                        color: #fff;
+                        cursor: pointer;
+                        padding: 1.3rem 3rem;
+                        font-family: $Roboto400-900;
+                        font-size: 1.6rem;
+                        border-radius: 0.3rem;
+                        text-align: center;
+                        background-color: #05f;
+                        color: #fff;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:920px) {
+    .ErrorPage{
+        .Error-controller{
+            .Error-row{
+                margin-top: 0;
+                .Error-text{
+                   
+                    .Error-title{
+                  
+                    .text{
+                        width: 49%;
+                        
+                                    }
+                    }
+                    .Error-body{
+                      
+                        p{
+                            width: 80%;
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:760px) {
+    .ErrorPage{
+        .Error-controller{
+            .Error-row{
+                margin-top: 0;
+                .Error-text{
+                   
+                
+                    .text{
+                        width: 59%;
+                      
+                                    }
+                    }
+                    .Error-body{
+                      
+                        p{
+                            width: 90%;
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+@media screen and (max-width:560px) {
+    .ErrorPage{
+        .Error-controller{
+            .Error-row{
+                margin-top: 0;
+                .Error-text{
+                  
+                    .Error-title{
+                 
+                    .text{
+                        width: 79%;
+                      
+                                    }
+                    }
+                    .Error-body{
+                       
+                        p{
+                            width: 100%;
+                           
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:360px) {
+    .ErrorPage{
+        .Error-controller{
+            .Error-row{
+                margin-top: 0;
+                .Error-text{
+                
+                    .Error-title{
+                
+                    .text{
+                        width: 100%;
+                       
+                        font-size: 3.5rem;
+                      
+                                    }
+                    }
+                    .Error-body{
+                       
+                        p{
+                            width: 100%;
+                           
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// i changed font size in media query
+    // line 251
+    // line 207 @meida 560px
+    // CODE CREATED BY ARYAN
+//       github  https://github.com/itsmeAryan
+//       website https://my-social-apps.herokuapp.com/
+//       youtube https://www.youtube.com/channel/UCBKbLITqJc7C-vx-xwUILmg
+//       email   spidy12k@gmail.com
+//       FOLLOW ME GUYS......
+// ITS ME ARYAN

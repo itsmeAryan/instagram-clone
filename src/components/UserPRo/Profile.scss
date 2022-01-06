@@ -1,0 +1,469 @@
+@import "../../GlobalScss.scss";
+
+.UserProfile {
+    width: 100%;
+    display: flex;
+    position: relative;
+    .profile-controller {
+        width: 100%;
+        display: flex;
+        position: relative;
+        .row {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .line {
+                width: 80%;
+                border: 1px solid rgb(212, 211, 211);
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+// user avtar
+.ImAvtar {
+    width: 80%;
+    padding-top: 2rem;
+    display: flex;
+    .parents {
+        display: flex;
+        width: 100%;
+        .imgs {
+            width: 25%;
+
+            display: flex;
+            .Rouns {
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                display: flex;
+                border: 1px solid orange;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .user-datas {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            .name {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 1rem;
+                .n {
+                    font-size: 2.5rem;
+                    font-family: $Roboto400-900;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                }
+                .back {
+                    display: flex;
+                    padding: 0.4rem 3rem;
+                    font-size: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $color3;
+                    color: #fff;
+                    font-family: $Roboto400-900;
+                    font-weight: 600;
+                    margin-left: 2rem;
+                    cursor: pointer;
+                    letter-spacing: 4px;
+                    .back2 {
+                    }
+                }
+                .back:hover {
+                    opacity: 0.9;
+                }
+            }
+            // emial
+            .email {
+                width: 100%;
+                display: flex;
+                font-size: 2rem;
+                font-family: $open400-800;
+                font-weight: 600;
+            }
+            // likes
+            .total {
+                display: flex;
+                width: 100%;
+                .all {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    .meta-likes {
+                        display: flex;
+                        margin: 0.7rem 0;
+                        width: 100%;
+                        .sider {
+                            display: flex;
+                            span {
+                                margin-left: 1rem;
+                                i {
+                                    font-size: 3rem;
+                                    color: rgb(231, 78, 78);
+                                }
+                            }
+                            .tap {
+                                font-size: 2rem;
+                                font-family: $mont400-900;
+                                font-weight: 600;
+                            }
+                        }
+                        .righter {
+                            display: flex;
+                            span {
+                                font-size: 2rem;
+                                font-family: $open400-800;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// icons for click
+.All_posts {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .All-container {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .meta-icons {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            .have-icons {
+                display: flex;
+                padding: 1rem;
+                width: 24%;
+                a {
+                    text-decoration: none;
+                    color: #132977;
+                    display: flex;
+                    width: 100%;
+                    span {
+                        font-size: 2rem;
+
+                        i {
+                            cursor: pointer;
+                        }
+                    }
+                    span {
+                        font-size: 1.8rem;
+                        font-family: $open400-800;
+                        font-weight: 600;
+                        cursor: pointer;
+                        padding-left: 1rem;
+                    }
+                }
+            }
+        }
+        .Alls {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .upload,.Videos {
+                width: 32%;
+                display: flex;
+                position: relative;
+                // border: 1px solid #111;
+                cursor: pointer;
+                box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.765);
+                padding: 0.1rem;
+                // border-radius: 0.3rem;
+                overflow: hidden;
+                margin: 0.6rem;
+                .imgs {
+                    width: 100%;
+                    display: flex;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .main {
+                    display: flex;
+                    position: absolute;
+                    bottom: -29%;
+                    transition: all 1.5s linear;
+                    width: 100%;
+                    .left {
+                        width: 50%;
+                        display: flex;
+                        background-color: $color9;
+                        opacity: 0.9;
+                        display: flex;
+                        align-items: center;
+                        padding: 1rem;
+                        span {
+                            i {
+                                font-size: 3rem;
+                            }
+                        }
+                        span {
+                            font-size: 2rem;
+                            color: #fff;
+                            padding-left: 0.5rem;
+                            font-family: $Roboto400-900;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .upload:hover .main {
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1160px) {
+    .All_posts{
+        width: 100%;
+        .All-container{
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width:1035px) {
+    .All_posts{
+        width: 100%;
+        .All-container{
+            width: 100%;
+            .Alls{
+                justify-content: space-between;
+              .upload,
+              .Videos{
+                  width: 30%;
+              }
+            }
+        }
+
+    }
+}
+@media screen and (max-width:875px) {
+    .UserProfile {
+      
+        .profile-controller {
+     
+            .row {
+              
+                .line {
+                    width: 100%;
+                    
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+    .ImAvtar{
+        width: 90%;
+        .parents{
+            imgs{
+                width: 30%;
+            }
+            .user-datas{
+                width: 70%;
+            }
+        }
+
+    }
+    .All_posts{
+        width: 100%;
+        .All-container{
+            .meta-icons{
+                width: 89%;
+                
+            }
+            .Alls{
+                justify-content: space-between;
+              .upload,
+              .Videos{
+                  width: 30%;
+              }
+            }
+        }
+
+    }
+}
+@media screen and (max-width:700px) {
+    .ImAvtar{
+        width: 100%;
+        .parents{
+            justify-content: space-between;
+            imgs{
+                width: 30%;
+            }
+            .user-datas{
+                width: 65%;
+            }
+        }
+
+    }
+    .All_posts{
+        width: 100%;
+        .All-container{
+            .meta-icons{
+                width: 100%;
+             
+                .tame{
+                    display: none;
+                }
+                .have-icons{
+                    width: 30%;
+                }
+            }
+            .Alls{
+                justify-content: space-between;
+              .upload,
+              .Videos{
+                  width: 40%;
+              }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:540px) {
+    .ImAvtar{
+        width: 100%;
+        .parents{
+            justify-content: space-between;
+            
+            .imgs {
+     width: 25%;
+                display: flex;
+                .Rouns {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    border: 1px solid orange;
+                    img {
+                        
+                    }
+                }
+            }
+            .user-datas{
+                width: 65%;
+            }
+        }
+
+    }
+    .All_posts{
+        width: 100%;
+        .All-container{
+            .meta-icons{
+                width: 100%;
+                
+                .tame{
+                    display: none;
+                }
+                .have-icons{
+                    width: 33%;
+                }
+            }
+            .Alls{
+                justify-content: center;
+              .upload,
+              .Videos{
+                  width: 80%;
+              }
+            }
+        }
+
+    }
+}
+@media screen and (max-width:461px) {
+    .ImAvtar{
+        width: 100%;
+        .parents{
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            
+            .imgs {
+            margin-bottom: 1rem;
+            width: 100%;
+     justify-content: center;
+                display: flex;
+                .Rouns {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    img {
+                   
+                    }
+                }
+            }
+            .user-datas{
+                // border: 1px solid orange;
+                width: 89%;
+     justify-content: center;
+     align-items: center;
+     .email {
+        width: 100%;
+        display: flex;
+        font-size: 1.72rem;
+        font-family: $open400-800;
+        font-weight: 600;
+    }
+
+            }
+        }
+
+    }.All_posts{
+        width: 100%;
+        .All-container{
+            .meta-icons{
+               justify-content: center;
+                .have-icons{
+                    width: 25%;
+                    justify-content: center;
+                    padding:1rem 0;
+                    .sl{
+                        display: none;
+                    }
+                    a {
+                       
+                        width: 100%;
+                        span {
+                            font-size: 2rem;
+    
+                            i {
+                                font-size: 2.7rem;
+                                cursor: pointer;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+
+    }    
+}// CODE CREATED BY ARYAN
+//       github  https://github.com/itsmeAryan
+//       website https://my-social-apps.herokuapp.com/
+//       youtube https://www.youtube.com/channel/UCBKbLITqJc7C-vx-xwUILmg
+//       email   spidy12k@gmail.com
+//       FOLLOW ME GUYS......
+// ITS ME ARYAN

@@ -1,0 +1,125 @@
+@import '../../GlobalScss.scss';
+
+.Comments{
+    width: 100%;
+    border-top: 1px solid rgb(236, 235, 233);
+    display: flex;
+    padding: 0.8rem 0;
+    .grp{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .face{
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .user-face{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                   
+                }
+            }
+
+        }
+        
+        .input{
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            .check{
+                width: 85%;
+                input[type="text"]{
+           width: 100%;
+           border: none;
+           outline: none;
+           padding: 0.6rem;
+           font-family: $Roboto400-900;
+
+                }
+
+            }
+           
+            .commit{
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .text{
+                    // border: 1px solid green;
+                    cursor: pointer;
+                    font-size: 1.70rem;
+                    font-family: $mont400-900;
+                    color: #1458ff;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:578px) {
+    .Comments{
+     
+        .grp{
+            
+            
+            .input{
+               
+              
+                .commit{
+                   
+                    .text{
+                        font-size: 1.50rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:350px) {
+    .Comments{
+        
+        .grp{
+            
+            .face{
+               
+                .user-face{
+                    width: 25px;
+                    height: 25px;
+                    
+                    img{
+                        width: 100%;
+                        
+                    }
+                }
+    
+            
+            
+               
+                .commit{
+                    
+                    .text{
+                        // border: 1px solid green;
+                        cursor: pointer;
+                        font-size: 1.350rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+// CODE CREATED BY ARYAN
+//       github  https://github.com/itsmeAryan
+//       website https://my-social-apps.herokuapp.com/
+//       youtube https://www.youtube.com/channel/UCBKbLITqJc7C-vx-xwUILmg
+//       email   spidy12k@gmail.com
+//       FOLLOW ME GUYS......
+// ITS ME ARYAN

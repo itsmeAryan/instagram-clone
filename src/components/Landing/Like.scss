@@ -1,0 +1,108 @@
+@import '../../GlobalScss.scss';
+.likes{
+    width: 100%;
+    display: flex;
+    padding:2rem 0.8rem;
+    justify-content: space-between;
+    .left{
+        width: 70%;
+        display: flex;
+        .icon{
+            width: 15%;
+            display: flex;
+            // border: 2px solid green;
+            justify-content: center;
+            align-items: center;
+            i{
+                cursor: pointer;
+                // color: blue;
+                font-size: 2.4rem;
+            }
+            .add{
+                color: red;
+            }
+
+        }
+    }
+    .right{
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        .kop{
+            display: flex;
+            width: 15%;
+            justify-content: center;
+            align-items: center;
+            i{
+                cursor: pointer;
+
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width:578px) {
+    .likes{
+        width: 100%;
+        display: flex;
+        padding:1.2rem 0.8rem;
+        justify-content: space-between;
+        .left{
+
+            .icon{
+               
+                i{
+                    cursor: pointer;
+                    font-size: 2.2rem;
+                }
+            }
+        }
+        .right{
+         
+            .kop{
+                
+                i{
+                    cursor: pointer;
+    
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:378px) {
+    .likes{
+        width: 100%;
+        display: flex;
+        padding:1rem 0.8rem;
+        justify-content: space-between;
+        .left{
+
+            .icon{
+               
+                i{
+                    cursor: pointer;
+                    font-size: 2rem;
+                }
+            }
+        }
+        .right{
+         
+            .kop{
+                
+                i{
+                    cursor: pointer;
+    
+                    font-size: 1.82rem;
+                }
+            }
+        }
+    }
+}
+// CODE CREATED BY ARYAN
+//       github  https://github.com/itsmeAryan
+//       website https://my-social-apps.herokuapp.com/
+//       youtube https://www.youtube.com/channel/UCBKbLITqJc7C-vx-xwUILmg
+//       email   spidy12k@gmail.com
+//       FOLLOW ME GUYS......
+// ITS ME ARYAN

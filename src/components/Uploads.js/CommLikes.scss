@@ -1,0 +1,37 @@
+@import "../../GlobalScss.scss";
+.likes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .left{
+        width: 85%;
+        .icon{
+            width: 20%;
+            i{
+                font-size: 2rem;
+            }
+            .add{
+                color: red;
+            }
+        }
+    }
+    .right{
+        width: 15%;
+        // border: 1px solid red;
+        display: flex;
+        .kop{
+            width: 100%;
+        }
+    }
+}
+.likes.morphin{
+    font-size: 1.52rem;
+    padding-inline-end: 1rem;
+    font-family: $Roboto400-900;
+}// CODE CREATED BY ARYAN
+//       github  https://github.com/itsmeAryan
+//       website https://my-social-apps.herokuapp.com/
+//       youtube https://www.youtube.com/channel/UCBKbLITqJc7C-vx-xwUILmg
+//       email   spidy12k@gmail.com
+//       FOLLOW ME GUYS......
+// ITS ME ARYAN

@@ -1,0 +1,50 @@
+$fredoka400: "Fredoka One", cursive;
+$mont400-900: "Montserrat", sans-serif;
+$open400-800: "Open Sans", sans-serif;
+$Roboto400-900: "Roboto", sans-serif;
+$white-color: #ffffff;
+$logo-color: #1458ff;
+$logo-icon: #34de8a;
+$search-back: #eeeeee;
+$square-icon: #e6e8ea;
+$icon-colo: #05f;
+$text-color: #888;
+$color1: #ff3b30; //one
+$color2: #4cd964; //two
+$color3: #132977; //three
+$color4: #ff2d55; //four
+$color5: #ffde00; //five
+$color6: #9b8385; //six
+$color7: #228b22; //seven
+$color8: #ffc0cb; //eight
+$color9: #5f9ea0; //nine
+$color10: #9933cc; //ten
+@mixin display($left, $right, $length, $bor-color) {
+    display: flex;
+    justify-content: $left;
+    align-items: $right;
+    width: $length;
+    border: 1px solid $bor-color;
+}
+@mixin border($color-name) {
+    border: 1px solid $color-name;
+}
+
+@mixin pos($pos, $left, $right, $top, $bottom) {
+    position: $pos;
+    bottom: $bottom;
+    top: $top;
+    left: $left;
+    right: $right;
+}
+@mixin box($size) {
+    box-shadow: 0 0 $size rgba($color: #000000, $alpha: 0.365);
+    border-radius: 1rem;
+}
+// CODE CREATED BY ARYAN
+//       github  https://github.com/itsmeAryan
+//       website https://my-social-apps.herokuapp.com/
+//       youtube https://www.youtube.com/channel/UCBKbLITqJc7C-vx-xwUILmg
+//       email   spidy12k@gmail.com
+//       FOLLOW ME GUYS......
+// ITS ME ARYAN
